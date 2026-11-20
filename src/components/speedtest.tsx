@@ -231,7 +231,9 @@ export function Speedtest() {
         </Link>
         <span className="flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-[11px] text-zinc-400">
           <span className="h-1.5 w-1.5 rounded-full bg-violet-400" />
-          Browser → server
+          Browser
+          <Icon name="arrow" className="h-3 w-3 shrink-0" />
+          server
         </span>
       </header>
       <main>
@@ -483,8 +485,20 @@ export function Speedtest() {
                   <tr>
                     <th className="px-4 py-3 font-normal">Time</th>
                     <th className="px-3 py-3 font-normal">Latency</th>
-                    <th className="px-3 py-3 font-normal">↓ Mbps</th>
-                    <th className="px-3 py-3 font-normal">↑ Mbps</th>
+                    <th className="px-3 py-3 font-normal">
+                      <span className="inline-flex items-center gap-1.5">
+                        <Icon name="download" className="h-3 w-3 shrink-0" />
+                        <span className="sr-only">Download </span>
+                        Mbps
+                      </span>
+                    </th>
+                    <th className="px-3 py-3 font-normal">
+                      <span className="inline-flex items-center gap-1.5">
+                        <Icon name="upload" className="h-3 w-3 shrink-0" />
+                        <span className="sr-only">Upload </span>
+                        Mbps
+                      </span>
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
